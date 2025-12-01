@@ -36,3 +36,4 @@ C:\Users\anhmi\OneDrive - Wilfrid Laurier University\Documents\Sheridan\Year 2\T
 C:\Users\anhmi\OneDrive - Wilfrid Laurier University\Documents\Sheridan\Year 2\Term 4\PROG 30000\Assignment4\Assignment4\TaskManagement\TaskManagement.API\obj\Debug\net9.0\TaskManagement.API.pdb
 C:\Users\anhmi\OneDrive - Wilfrid Laurier University\Documents\Sheridan\Year 2\Term 4\PROG 30000\Assignment4\Assignment4\TaskManagement\TaskManagement.API\obj\Debug\net9.0\TaskManagement.API.genruntimeconfig.cache
 C:\Users\anhmi\OneDrive - Wilfrid Laurier University\Documents\Sheridan\Year 2\Term 4\PROG 30000\Assignment4\Assignment4\TaskManagement\TaskManagement.API\obj\Debug\net9.0\ref\TaskManagement.API.dll
+C:\Users\anhmi\OneDrive - Wilfrid Laurier University\Documents\Sheridan\Year 2\Term 4\PROG 30000\Assignment4\Assignment4\TaskManagement\TaskManagement.API\obj\Debug\net9.0\TaskManagement.API.sourcelink.json
