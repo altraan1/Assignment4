@@ -10,7 +10,6 @@
         "dependencies": {
           "Microsoft.AspNetCore.JsonPatch": "10.0.0",
           "Microsoft.AspNetCore.OpenApi": "9.0.11",
-          "Microsoft.EntityFrameworkCore.Tools": "10.0.0",
           "TaskManagement.Core": "1.0.0",
           "TaskManagement.Infrastructure": "1.0.0"
         },
@@ -20,7 +19,6 @@
       },
       "Microsoft.AspNetCore.JsonPatch/10.0.0": {
         "dependencies": {
-          "Microsoft.CSharp": "4.7.0",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
@@ -41,8 +39,25 @@
           }
         }
       },
-      "Microsoft.CSharp/4.7.0": {},
-      "Microsoft.EntityFrameworkCore.Tools/10.0.0": {},
+      "Microsoft.EntityFrameworkCore/8.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Abstractions/8.0.0": {
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
       "Microsoft.OpenApi/1.6.17": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
@@ -69,6 +84,7 @@
       },
       "TaskManagement.Infrastructure/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0",
           "TaskManagement.Core": "1.0.0"
         },
         "runtime": {
@@ -100,19 +116,19 @@
       "path": "microsoft.aspnetcore.openapi/9.0.11",
       "hashPath": "microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512"
     },
-    "Microsoft.CSharp/4.7.0": {
+    "Microsoft.EntityFrameworkCore/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
-      "path": "microsoft.csharp/4.7.0",
-      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+      "sha512": "sha512-SoODat83pGQUpWB9xULdMX6tuKpq/RTXDuJ2WeC1ldUKcKzLkaFJD1n+I0nOLY58odez/e7z8b6zdp235G/kyg==",
+      "path": "microsoft.entityframeworkcore/8.0.0",
+      "hashPath": "microsoft.entityframeworkcore.8.0.0.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Tools/10.0.0": {
+    "Microsoft.EntityFrameworkCore.Abstractions/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Gx6AWCf1CsBHTbvVVWBYBKp6hrwZt0IgBigoBPaybwOBG2EFIfZc7NP2BoR6r56YuuikbPIzCuvQuFYNnX43+A==",
-      "path": "microsoft.entityframeworkcore.tools/10.0.0",
-      "hashPath": "microsoft.entityframeworkcore.tools.10.0.0.nupkg.sha512"
+      "sha512": "sha512-VR22s3+zoqlVI7xauFKn1znSIFHO8xuILT+noSwS8bZCKcHz0ydkTDQMuaxSa5WBaQrZmwtTz9rmRvJ7X8mSPQ==",
+      "path": "microsoft.entityframeworkcore.abstractions/8.0.0",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.8.0.0.nupkg.sha512"
     },
     "Microsoft.OpenApi/1.6.17": {
       "type": "package",
