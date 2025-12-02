@@ -1,16 +1,38 @@
+using Microsoft.EntityFrameworkCore;
+using TaskManagement.Core.Interfaces;
+using TaskManagement.Infrastructure.Data;
+using TaskManagement.Infrastructure.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddControllers().AddNewtonsoftJson(); // for JSON patch support
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+// builder.Services.AddOpenApi();
 
+// configure SQLite database
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Register repository
+builder.Services.AddScoped<ITaskRepository, TaskRepository>();
 var app = builder.Build();
+
+// Apply migrations on startup
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    db.Database.Migrate();
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+app.UseAuthorization();
+app.MapControllers();
+app.Run();
 
 var summaries = new[]
 {
