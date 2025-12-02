@@ -2,7 +2,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TaskManagement.Core\TaskManagement.Core.csproj" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.1" />
   </ItemGroup>
 
   <PropertyGroup>
